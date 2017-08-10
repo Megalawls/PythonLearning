@@ -7,7 +7,7 @@ class Paint ():
         self.priceCan = priceCan
         self.coveragePerLitre = coveragePerLitre
 
-    def getCoveragePerCan (self):
+    def getCoveragePerCan(self):
         return self.coveragePerLitre * self.litresCan
 
     def pricePerRoom(self, input):
@@ -23,12 +23,11 @@ class Paint ():
         " cans of Paint will be wasted")
         return cansPerRoom(self, input)*self.priceCan
 
-
-
 cheapoMax = Paint("cheapoMax", 20, 19.99, 10)
 averageJoes = Paint("averageJoes", 15, 17.99, 11)
 duluxuriousPaints = Paint("duluxuriousPaints", 10, 25.00, 20)
 
-print(cheapoMax.pricePerRoom(300))
-print(averageJoes.pricePerRoom(300))
-print(duluxuriousPaints.pricePerRoom(300))
+print(cheapoMax.getCoveragePerCan())
+# print(averageJoes.pricePerRoom(300))
+# print(duluxuriousPaints.pricePerRoom(300))
+#
