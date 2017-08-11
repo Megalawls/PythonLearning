@@ -19,3 +19,4 @@ for i in range(1 , len(people)+1):
     file.close()
     readpeople.append(Person(per[0], per[1], per[2]))
 
+p
